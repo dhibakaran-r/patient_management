@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+.header{
+  @apply w-full h-20 bg-blue-500 flex items-center justify-center text-white;
+}
+
+.header h1{
+  @apply text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider uppercase;
+}
+
+.section_container{
+  @apply w-full p-4 mb-8 flex justify-center items-center;
+}
+
+.patientList_container .patientList_wrap{
+  @apply w-full flex flex-col gap-4;
+}
+
+.patient_table{
+  @apply w-full lg:min-w-5/6 2xl:w-1/2 p-2 border-collapse border border-gray-400 shadow-2xl rounded-md overflow-x-scroll;
+}
+
+.patient_table .table_head{
+  @apply bg-gray-200
+}
+
+.patient_table tr{
+  @apply shadow-md hover:shadow-lg duration-300;
+}
+
+.patient_table th, .patient_table td{
+  @apply text-xs md:text-base p-2 border-collapse border border-gray-200 capitalize;
+}
+
+.patient_table th{
+  @apply border-gray-400;
+}
+
+.button_wrap{
+  @apply flex justify-around gap-x-2 md:gap-0;
+}
+
+.base_button{
+  @apply w-20 md:w-32 lg:w-40 flex gap-4 items-center justify-center text-xs md:text-base text-white px-1 py-[0.15rem] lg:px-2 lg:py-1 rounded cursor-pointer duration-300;
+}
+
+.green_button{
+  @apply bg-green-500 hover:bg-green-600;
+}
+
+.blue_button{
+  @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.red_button{
+  @apply bg-red-500 hover:bg-red-600;
+}
+
+.patient_card{
+  @apply w-96 mt-20 bg-white space-y-4 shadow-md rounded-2xl p-6 border border-gray-200 capitalize cursor-pointer 
+  duration-300 hover:scale-105 hover:shadow-lg;
+}
+
+.patient_card .card_id{
+  @apply w-32 md:w-40 text-xs md:text-base font-semibold text-center p-1 bg-gray-200 text-gray-600 rounded-full;
+}
+
+.patient_card .card_img{
+  @apply w-32 md:w-60 mx-auto;
+}
+
+.patient_card .patient_info{
+  @apply mt-4 space-y-4 text-sm text-gray-600;
+}
+
+.patient_info .info_header{
+  @apply text-xl md:text-3xl flex items-center gap-6 font-bold text-gray-800 mb-2;
+}
+
+.patient_info .info_header span{
+  @apply flex gap-2 items-center justify-center text-xs md:text-base px-3 py-1 bg-blue-100 text-blue-600 rounded-lg;
+}
+
+.patient_card .patient_info p{
+  @apply text-gray-500 ms-2 font-semibold;
+}
+
+.patient_card .patient_status{
+  @apply border border-gray-200 p-2 space-y-4 rounded-md;
+}
+
+.patient_card .patient_status .status_title{
+  @apply font-semibold;
+}
+
+.patient_card .patient_status .status_desc{
+  @apply px-3 py-1 bg-red-100 text-red-600 rounded-lg;
+}
+
+
+
+
